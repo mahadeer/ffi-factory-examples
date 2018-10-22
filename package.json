@@ -1,0 +1,28 @@
+{
+  "name": "ffi-factory-examples",
+  "version": "1.0.0",
+  "description": "Examples repository of the ffi-factory package.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahadeer13/ffi-factory-examples.git"
+  },
+  "keywords": [
+    "ffi-proxy",
+    "ffi-factory",
+    "ffi"
+  ],
+  "author": "Mahadeer Mohamed <mafyosis@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/mahadeer13/ffi-factory-examples/issues"
+  },
+  "homepage": "https://github.com/mahadeer13/ffi-factory-examples#readme",
+  "devDependencies": {
+    "ffi-proxy": "file:../ffi-proxy"
+  }
+}

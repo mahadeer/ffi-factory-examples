@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+#lib files
+addons/*/target/
+bin
+*.dll
+*.dylib
+*.so

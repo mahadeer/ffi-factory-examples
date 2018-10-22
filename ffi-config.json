@@ -1,0 +1,23 @@
+{
+    "root": "./addons",
+    "lib": "./bin",
+    "addons": [
+        {
+            "name": "simpler_things",
+            "alias": "SimpleRust",
+            "buildCmd": "cargo build --release",
+            "afterBuildCmd": "mv ./target/release/lib${name}.${target} ./target/release/${alias}.${target}",
+            "dist": "./target/release"
+        },
+        {
+            "name": "c_libs",
+            "alias": "CCalc",
+            "buildCmd": "gcc -shared -o ${alias}.${target} -fPIC calc.c"
+        },
+        {
+            "name": "c_libs",
+            "alias": "DoubleMe",
+            "buildCmd": "gcc -shared -o ${alias}.${target} -fPIC double_me.c"
+        }
+    ]
+}
