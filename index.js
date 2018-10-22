@@ -1,6 +1,6 @@
-var ffiProxy = require("ffi-proxy");
+var ffiBuilder = require("ffi-builder");
 
-ffiProxy
+ffiBuilder
     .build()
     .then(console.log)
     .catch(console.error);

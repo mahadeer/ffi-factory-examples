@@ -13,7 +13,7 @@
   },
   "keywords": [
     "ffi-proxy",
-    "ffi-factory",
+    "ffi-builder",
     "ffi"
   ],
   "author": "Mahadeer Mohamed <mafyosis@gmail.com>",
@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/mahadeer13/ffi-factory-examples#readme",
   "devDependencies": {
-    "ffi-proxy": "file:../ffi-proxy"
+    "ffi-builder": "file:../ffi-builder"
   }
 }
