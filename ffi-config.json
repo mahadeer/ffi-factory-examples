@@ -7,17 +7,30 @@
             "alias": "SimpleRust",
             "buildCmd": "cargo build --release",
             "afterBuildCmd": "mv ./target/release/lib${name}.${target} ./target/release/${alias}.${target}",
-            "dist": "./target/release"
+            "dist": "./target/release",
+            "proxy": {
+                "fibonacci": ["int32", ["int32"]]
+            }
         },
         {
             "name": "c_libs",
-            "alias": "CCalc",
-            "buildCmd": "gcc -shared -o ${alias}.${target} -fPIC calc.c"
+            "buildCmd": "gcc -shared -o ${alias}.${target} -fPIC calc.c",
+            "proxy": {
+                "add": ["int32", ["int32", "int32"]],
+                "sub": ["int32", ["int32", "int32"]],
+                "multiply": ["int32", ["int32", "int32"]]
+            }
         },
         {
             "name": "c_libs",
             "alias": "DoubleMe",
-            "buildCmd": "gcc -shared -o ${alias}.${target} -fPIC double_me.c"
+            "buildCmd": "gcc -shared -o ${alias}.${target} -fPIC double_me.c",
+            "proxy": {
+                "double_val": {
+                    "alias": "doubleVal",
+                    "signature" : ["int32", ["int32"]]
+                }
+            }
         }
     ]
 }

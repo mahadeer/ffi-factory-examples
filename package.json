@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/mahadeer13/ffi-factory-examples#readme",
   "dependencies": {
-    "ffi-builder": "^1.1.0"
+    "ffi-proxy": "file:../ffi-proxy"
   }
 }
